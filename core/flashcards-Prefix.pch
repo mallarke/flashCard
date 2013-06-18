@@ -1,0 +1,26 @@
+//
+// Prefix header for all source files of the 'flashcards' target in the 'flashcards' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <QuartzCore/QuartzCore.h>
+
+    #import "NSDictionary+BaseValues.h"
+    #import "NSMutableDictionary+BaseValues.h"
+    #import "NSObject+NewData.h"
+    #import "UIView+Frame.h"
+
+    #import "colors.h"
+    #import "fonts.h"
+    #import "strings.h"
+    #import "values.h"
+
+#endif
